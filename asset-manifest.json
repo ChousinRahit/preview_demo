@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/preview_demo/static/js/main.017f2c77.chunk.js",
+    "main.js.map": "/preview_demo/static/js/main.017f2c77.chunk.js.map",
+    "runtime-main.js": "/preview_demo/static/js/runtime-main.0a6eb4c6.js",
+    "runtime-main.js.map": "/preview_demo/static/js/runtime-main.0a6eb4c6.js.map",
+    "static/js/2.d352f1d2.chunk.js": "/preview_demo/static/js/2.d352f1d2.chunk.js",
+    "static/js/2.d352f1d2.chunk.js.map": "/preview_demo/static/js/2.d352f1d2.chunk.js.map",
+    "index.html": "/preview_demo/index.html",
+    "static/js/2.d352f1d2.chunk.js.LICENSE.txt": "/preview_demo/static/js/2.d352f1d2.chunk.js.LICENSE.txt",
+    "static/media/etihaWater.9782647e.png": "/preview_demo/static/media/etihaWater.9782647e.png",
+    "static/media/one_1.60a594b5.jpg": "/preview_demo/static/media/one_1.60a594b5.jpg",
+    "static/media/one_2.ac4ce5ea.jpg": "/preview_demo/static/media/one_2.ac4ce5ea.jpg",
+    "static/media/one_3.8fc66581.jpg": "/preview_demo/static/media/one_3.8fc66581.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a6eb4c6.js",
+    "static/js/2.d352f1d2.chunk.js",
+    "static/js/main.017f2c77.chunk.js"
+  ]
+}
