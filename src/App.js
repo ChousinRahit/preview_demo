@@ -84,7 +84,12 @@ function App() {
           justifyContent: 'center',
         }}
       >
-        <Typography variant="h3" color="#3cabff" component="h3">
+        <Typography
+          variant="h3"
+          color="#3cabff"
+          component="h3"
+          style={{ fontSize: '2.6em' }}
+        >
           Services We Offer
         </Typography>
       </div>
@@ -116,16 +121,16 @@ function App() {
 
       <div style={{ width: '85%', margin: 'auto' }}>
         <Grid container spacing={3}>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <ServiceCard title="Change Rate Category" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <ServiceCard title="No Liability Certification" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <ServiceCard title="Transferring Amount" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <ServiceCard title="Payment Service" />
           </Grid>
           <Grid item xs={12} style={{ textAlign: 'center' }}>
@@ -153,7 +158,12 @@ function App() {
           justifyContent: 'center',
         }}
       >
-        <Typography variant="h3" color="#3cabff" component="h3">
+        <Typography
+          variant="h3"
+          color="#3cabff"
+          component="h3"
+          style={{ fontSize: '2.6em' }}
+        >
           Media Highlights
         </Typography>
       </div>
@@ -185,16 +195,16 @@ function App() {
 
       <div style={{ width: '85%', margin: 'auto' }}>
         <Grid container spacing={3}>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <EventCard title="Change Rate Category" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <EventCard title="No Liability Certification" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <EventCard title="Transferring Amount" />
           </Grid>
-          <Grid item xs={6} sm={3}>
+          <Grid item xs={12} sm={3}>
             <EventCard title="Payment Service" />
           </Grid>
           <Grid item xs={12} style={{ textAlign: 'center' }}>
