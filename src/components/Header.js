@@ -4,15 +4,41 @@ import {
   IconButton,
   Toolbar,
   useMediaQuery,
+  Paper,
+  makeStyles,
 } from '@material-ui/core';
 import { SearchRounded } from '@material-ui/icons';
 import React, { Fragment, useState } from 'react';
 import LOGO from '../assets/img/etihaWater.png';
 import { Link as RouterLink } from 'react-router-dom';
 import HamburgerMenu from 'react-hamburger-menu';
+import SideDeawer from './SideDeawer';
+
+const useStyles = makeStyles(theme => ({
+  menuClose: {
+    width: 280,
+    height: '100vh',
+    position: 'absolute',
+    top: 0,
+    right: -300,
+
+    zIndex: 0,
+  },
+  menuOpen: {
+    width: 280,
+    height: '100vh',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+
+    zIndex: 99,
+  },
+}));
 
 export default function Header() {
   const matches = useMediaQuery('(max-width:600px)');
+
+  const classes = useStyles();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const handleMenuClick = () => {
@@ -70,7 +96,7 @@ export default function Header() {
           <HamburgerMenu
             isOpen={menuOpen}
             menuClicked={() => handleMenuClick()}
-            width={18}
+            width={25}
             height={15}
             strokeWidth={1}
             rotate={0}
@@ -119,8 +145,14 @@ export default function Header() {
   };
 
   return (
-    <header style={{ width: '85%' }}>
-      <AppBar>{displayDesktop()}</AppBar>
-    </header>
+    <Fragment>
+      <header style={{ width: '85%' }}>
+        <AppBar>{displayDesktop()}</AppBar>
+      </header>
+
+      <Paper className={menuOpen ? classes.menuClose : classes.menuOpen}>
+        <SideDeawer />
+      </Paper>
+    </Fragment>
   );
 }
