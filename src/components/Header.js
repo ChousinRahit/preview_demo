@@ -66,18 +66,19 @@ export default function Header() {
           style={{ width: matches ? 180 : 'auto' }}
         />
 
-        <HamburgerMenu
-          isOpen={menuOpen}
-          menuClicked={() => handleMenuClick()}
-          width={18}
-          height={15}
-          strokeWidth={1}
-          rotate={0}
-          color="black"
-          borderRadius={0}
-          animationDuration={0.5}
-        />
-        {!matches && (
+        {matches ? (
+          <HamburgerMenu
+            isOpen={menuOpen}
+            menuClicked={() => handleMenuClick()}
+            width={18}
+            height={15}
+            strokeWidth={1}
+            rotate={0}
+            color="black"
+            borderRadius={0}
+            animationDuration={0.5}
+          />
+        ) : (
           <div style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
             <Fragment>
               {getMenuButtons()}
